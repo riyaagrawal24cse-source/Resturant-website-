@@ -1,0 +1,613 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#contentarea {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/premium-photo/arayes-restaurant-background-photography_1264082-31893.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.600);
+}
+
+#overlay h1 {
+    color: lightgoldenrodyellow;
+    font-size: 130px;
+    line-height: 0.9;
+    margin-top: 120px;
+    transition: transform 0.8s ease;
+}
+
+#overlay h1:hover {
+    transform: translateY(-20px) scale(1.1);
+}
+
+#overlay p {
+    color: rgba(255, 255, 255, 0.864);
+    font-size: 15px;
+    margin-top: 30px;
+    transition: transform 0.6s ease;
+}
+
+#overlay p:hover {
+    transform: translateY(-8px) scale(1.1);
+}
+
+button {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.789);
+    color: rgba(255, 255, 255, 0.832);
+    width: 140px;
+    height: 35px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.book {
+    margin-left: 15px;
+    background-color: rgba(255, 68, 0, 0.8);
+}
+
+#nav {
+    color: rgb(31, 31, 31);
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    /* font-family: cursive; */
+    font-weight: 600;
+}
+
+#nav img {
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 470px;
+}
+
+#text-cont {
+    position: absolute;
+    /* left: 55%; */
+    padding-left: 60px;
+}
+
+.food:hover {
+    color: red;
+    background-color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.book:hover {
+    color: rgba(255, 68, 0, 0.8);
+    background-color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu a {
+    /* background-color: aqua; */
+    width: 30%;
+    justify-content: space-between;
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+#menu a:hover {
+    color: blue;
+    transform: scale(1.2);
+}
+
+#sec-section {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#food-sec {
+    margin-top: 140px;
+    position: absolute;
+    left: 50%;
+    color: white;
+}
+
+#food-sec h1 {
+    font-size: 130px;
+    line-height: 0.9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#food-sec h1 span {
+    margin-left: 15px;
+}
+
+#food-btn {
+    border-radius: 5px;
+    margin-left: 250px;
+    margin-top: 50px;
+    background-color: black;
+    border: 1px solid white;
+    /* font-size: 10px; */
+}
+
+.hover-gallery {
+    position: absolute;
+    width: 570px;
+    height: 570px;
+    margin-top: 80px;
+    /* padding-top: 140px; */
+    margin-left: 70px;
+    /* margin-bottom: 150px; */
+    background-size: cover;
+    background-position: center;
+    border-radius: 70px 0px 70px 0px;
+    /* animation: changedishes 3.5s infinite;
+    cursor: pointer; */
+    background-image: url(https://wallpapercave.com/wp/wp11429920.jpg);
+
+}
+
+.hover-gallery:hover {
+    animation: changedishes ease-in 7s infinite;
+    cursor: pointer;
+}
+
+@keyframes changedishes {
+    0% {
+        background-image: url(https://wallpapercave.com/wp/wp11429920.jpg);
+    }
+
+    10% {
+        background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230611/pngtree-dosa-is-sitting-on-a-plate-and-sauce-image_2887017.jpg);
+    }
+
+    20% {
+        background-image: url(https://img.freepik.com/premium-photo/indian-delicious-spicy-cuisine-paneer-toofani-served-with-tandoori-roti_55610-3135.jpg);
+    }
+
+    30% {
+        background-image: url(https://tse3.mm.bing.net/th/id/OIP.HPLeKZ6PDx0n59-EmUIZNgHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3);
+    }
+
+    40% {
+        background-image: url(https://tse3.mm.bing.net/th/id/OIP.PD4sWJYxEb_d81ZynbNP9wHaE7?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3);
+    }
+
+    50% {
+        background-image: url(https://thvnext.bing.com/th/id/OIP.aF999RLCUQZJNVeJK5hkRwHaE8?o=7&cb=12rm=3&rs=1&pid=ImgDetMain&o=7&rm=3);
+    }
+
+    60% {
+        background-image: url(https://media.timeout.com/images/105727033/image.jpg);
+    }
+
+    70% {
+        background-image: url(https://tse1.mm.bing.net/th/id/OIP.TXZW4jEcUyUgKSJyTDNCvwHaHa?cb=12&w=1024&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3);
+    }
+
+    80% {
+        background-image: url(https://www.thestatesman.com/wp-content/uploads/2017/10/sweet-dish-5.jpg);
+    }
+
+    90% {
+        background-image: url(https://tse1.mm.bing.net/th/id/OIP.wKp_sDIWeBkV1HVIS0ct5QHaDm?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3);
+    }
+
+    100% {
+        background-image: url(https://tse2.mm.bing.net/th/id/OIP.VSmLvVy9HMOQCNMF4RbJOAHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3);
+    }
+}
+
+#food-btn:hover {
+    transform: scale(1.2);
+    font-size: 13px;
+    cursor: pointer;
+    color: lightgoldenrodyellow;
+}
+
+#third-section {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#party-sec {
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#party-sec h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#party-sec p {
+    font-size: 19px;
+    margin-bottom: 40px;
+    color: rgb(221, 221, 221);
+}
+
+.party-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+}
+
+.party-card {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.party-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.party-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.party-card:hover img {
+    transform: scale(1.2);
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(255, 215, 0, 1);
+    }
+}
+
+.party-card:hover {
+    animation: glow 1.5s infinite alternate;
+}
+
+.cta-btn {
+    margin-top: 90px;
+    border-radius: 10px;
+    /* margin-left: 250px; */
+    margin-top: 90px;
+    background-color: transparent;
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    justify-content: center;
+}
+
+.cta-btn:hover {
+    background-color: rgb(255, 102, 0);
+    color: black;
+    border-color: rgb(255, 102, 0);
+    transform: scale(1.08);
+}
+
+
+.fourth-section {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 29, 20);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    /* font-size: 30px; */
+}
+
+.fourth-section h1 {
+    color: rgb(245, 200, 121);
+    margin-bottom: 40px;
+}
+
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-card {
+    background-color: rgb(58, 37, 24);
+    width: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+}
+
+.img-box {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #ad4d11;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.food-card h3 {
+    color: rgb(253, 223, 154);
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.food-card p {
+    color: white;
+    font-size: 16px;
+}
+
+#accommodation {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 29, 20);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#accommodation h1 {
+    color: rgb(245, 200, 121);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#accommodation p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: rgb(240, 224, 200);
+}
+
+.accommodation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.room-card {
+    background-color: rgb(58, 37, 24);
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+.room-img {
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.room-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.room-img img:hover {
+    transform: scale(1.1);
+}
+
+.room-card h3 {
+    color: rgb(253, 223, 154);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.room-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: white;
+}
+
+.book-room {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-room:hover {
+    background-color: white;
+    color: rgb(255, 102, 0);
+    transform: scale(1.05);
+}
+
+
+#reviews {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(250, 247, 242);
+    padding: 60px 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#reviews h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: rgb(92, 61, 46);
+    letter-spacing: 1px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 40px;
+}
+
+.review-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    padding: 25px 20px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.review-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.review-card h3 {
+    font-size: 19px;
+    color: rgb(59, 47, 47);
+    margin-bottom: 8px;
+}
+
+.review-card p {
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+    line-height: 1.5;
+}
+
+.stars i {
+    color: yellow;
+}
+
+#contact-section {
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgb(250, 247, 242);
+    color: rgb(92, 61, 46);
+    text-align: center;
+    padding: 60px 20px;
+    font-family: sans-serif;
+}
+
+#contact-section h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: rgb(46, 29, 20);
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-card {
+    background-color: white;
+    width: 300px;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+.contact-card iframe {
+    width: 100%;
+    height: 150px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.footer-note {
+    margin-top: 50px;
+    font-size: 14px;
+    color: rgb(59, 47, 47);
+}
